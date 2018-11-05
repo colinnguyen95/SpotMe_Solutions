@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Image, View, Text, AsyncStorage } from 'react-native';
 import { Button } from 'native-base';
 import { createBottomTabNavigator, createSwitchNavigator, createStackNavigator } from 'react-navigation';
-
+import colors from '../components/styles/colors';
 //import { AppLoading } from 'expo';
 import Slides from '../components/Slides';
 import LogoTitle from '../components/LogoTitle';
@@ -61,7 +61,7 @@ class WelcomeScreen extends Component {
           </Button>
           <Button 
             onPress={() => this.props.navigation.navigate('Signup')}
-            style={{ width: 120, justifyContent: 'center', backgroundColor: '#1AE6CB' }}
+            style={{ width: 120, justifyContent: 'center', backgroundColor: colors.sp_color }}
           >
             <Text style={{ color: 'white'}}>Get Started</Text>
           </Button>

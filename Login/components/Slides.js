@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, ScrollView, Dimensions, Animated } from 'react-native';
 import { Button } from 'react-native-elements';
+import colors from '../components/styles/colors';
 import TutImages from '../components/TutImages';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
@@ -87,7 +88,7 @@ const styles = {
     fontSize: 25,
     fontWeight: 'bold',
     textAlign: 'center',
-    color: '#1AE6CB',
+    color: colors.sp_color,
     marginTop: 20
   },
   subTextStyle: {
@@ -95,7 +96,7 @@ const styles = {
     marginHorizontal: 25,
     margin: 10,
     textAlign: 'center',
-    color: '#1AE6CB',
+    color: colors.sp_color,
   },
   buttonStyle: {
     backgroundColor: '#0288D1',
