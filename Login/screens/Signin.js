@@ -22,8 +22,8 @@ class Signin extends Component {
     <Container style={styles.BtnContainer}>
       <Content style={styles.ContentContainer}>
         <Button
-          primary
-          //style={styles.FbBtn}
+          //primary
+          style={styles.FbBtn}
           onPress={this.signIn}
         >
           <View style={styles.BtnContainer}>
@@ -50,7 +50,7 @@ class Signin extends Component {
           or continue with email
         </Text>
 
-        <Form>
+        <Form style={{justifyContent: 'center'}}>
           <Item>
             <View style={styles.FormContainer} >
               <Label style={styles.Label} >Email</Label>
@@ -77,6 +77,10 @@ class Signin extends Component {
               />
             </View>
           </Item>
+
+          <Button primary style={styles.Submit} >
+            <Text style={styles.TxtSubmit}>Submit</Text>
+          </Button>
         </Form>
       </Content>
     </Container>
@@ -93,6 +97,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 25
   },
   FbBtn: {
+    backgroundColor: '#3B5898'
     // flexDirection: 'row',
     // alignSelf: 'stretch',
     // justifyContent: 'center',
@@ -121,5 +126,17 @@ const styles = StyleSheet.create({
     flex: 1, 
     textAlign: 'right',
     color: colors.txt_color
+  },
+  Submit: {
+    marginTop: 40,
+    justifyContent: 'center',
+    alignContent: 'center',
+    alignSelf: 'stretch'
+  },
+  TxtSubmit: {
+    fontSize: 18,
+    color: 'white',
+    fontWeight: 'bold'
+
   }
 });
